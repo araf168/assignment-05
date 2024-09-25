@@ -23,21 +23,21 @@
 </head>
 
 <body class="font-lexend">
-    <header class="">
-        <div class="navbar bg-[#F9F7F3] mx-auto">
-            <div class="navbar-start">
-                <a href="/index.html" class="btn btn-ghost bg-[#B4F461] hover:bg-lime-500 text-xl">Home</a>
+    <header class="w-full sticky top-0 z-10 bg-transparent backdrop-blur-md
+        <div class=" navbar bg-[#F9F7F3] mx-auto">
+        <div class="navbar-start">
+            <a href="/index.html" class="btn btn-ghost bg-[#B4F461] hover:bg-lime-500 text-xl">Home</a>
+        </div>
+        <div class="navbar-center gap-3 hidden lg:flex">
+            <img class="size-10" src="/assets/logo.png" alt="">
+            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+        </div>
+        <div class="navbar-end">
+            <div class="flex flex-row items-center gap-2">
+                <img class="size-8" src="assets/coin.png" alt="">
+                <h1><span>5000</span> BDT</h1>
             </div>
-            <div class="navbar-center gap-3 hidden lg:flex">
-                <img class="size-10" src="/assets/logo.png" alt="">
-                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-            </div>
-            <div class="navbar-end">
-                <div class="flex flex-row items-center gap-2">
-                    <img class="size-8" src="assets/coin.png" alt="">
-                    <h1><span>5000</span> BDT</h1>
-                </div>
-            </div>
+        </div>
         </div>
     </header>
     <main class="w-11/12 md:w-10/12 mx-auto">
@@ -45,8 +45,9 @@
             <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Important FAQ</h1>
             <img class="size-14 md:size-16 lg:size-20" src="assets/faq.png" alt="">
         </div>
-        <div class="w-full join join-vertical"> 
+        <div class="w-full join join-vertical">
             <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
                     <p>Write your answer here</p>
@@ -56,24 +57,41 @@
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
                     <p>Write your answer here</p>
+                    <ul></ul>
+                    <li>1. document.getElementById('id') - selects an element by its ID.</li>
+                    <li>2. document.querySelector('selector') - selects the first element that matches a CSS
+                        selector.</li>
+                    <li>3. document.getElementsByClassName('class') - selects elements by their class name.</li>
+                    <li>4. document.getElementsByTagName('tag') - selects elements by their tag name.</li>
+                    </ul>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
                 <div class="collapse-content">
                     <p>Write your answer here</p>
                 </div>
             </div>
             <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
                 <div class="collapse-content">
                     <p>Write your answer here</p>
+                    <ul></ul>
+                    <li><span class="font-bold">Attributes</span>: Use setAttribute() to modify or add an attribute
+                        (e.g., element.setAttribute('src', 'image.jpg')) and getAttribute() to retrieve it.</li>
+                    <li><span class="font-bold">Styles</span>: Access or modify the style property (e.g.,
+                        element.style.color = 'red') or use classList to add/remove classes (e.g.,
+                        element.classList.add('active')).</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </main>
     <footer class="bg-[#F9F7F3] h-40 mt-16">
-        
+
     </footer>
 </body>
 
