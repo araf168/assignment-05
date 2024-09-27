@@ -11,14 +11,13 @@ function getTextFieldValueById(id) {
 }
 
 function showSectionById(id) {
-    document.getElementById('section-donation').classList.add('hidden');
+    document.getElementById('donation-section').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
 
 function changeColorById(id) {
-    document.getElementById('button-donation').classList.add('btn-outline');
-    document.getElementById('button-history').classList.add('btn-outline');
+    document.getElementById('donation-button').classList.add('btn-outline');
+    document.getElementById('history-button').classList.add('btn-outline');
     document.getElementById(id).classList.remove('btn-outline');
 }
-

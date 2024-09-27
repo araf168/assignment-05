@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Donate Bangladesh Blog</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- DaisyUi & Tailwind CSS -->
+    <!-- DaisyUI & Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
         .font-lexend {
             font-family: "Lexend", sans-serif;
@@ -23,74 +22,78 @@
 </head>
 
 <body class="font-lexend">
-    <header class="w-full sticky top-0 z-10 bg-transparent backdrop-blur-md
-        <div class=" navbar bg-[#F9F7F3] mx-auto">
-        <div class="navbar-start">
-            <a href="/index.html" class="btn btn-ghost bg-[#B4F461] hover:bg-lime-500 text-xl">Home</a>
-        </div>
-        <div class="navbar-center gap-3 hidden lg:flex">
-            <img class="size-10" src="/assets/logo.png" alt="">
-            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
-        </div>
-        <div class="navbar-end">
-            <div class="flex flex-row items-center gap-2">
-                <img class="size-8" src="assets/coin.png" alt="">
-                <h1><span>5000</span> BDT</h1>
+    <header class="w-full sticky top-0 z-10 bg-transparent backdrop-blur-md">
+        <div class="navbar bg-base-100 pt-8 pb-16 w-11/12 md:w-10/12 mx-auto bg-transparent">
+            <div class="navbar-start">
+                <a href="./index.html"
+                    class="btn btn-accent w-fit">Home</a>
             </div>
-        </div>
+            <div class="navbar-center gap-2 hidden lg:flex">
+                <img src="./assets/logo.png" alt="" class="size-12">
+                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <div class=" w-fit flex flex-row items-center gap-2">
+                    <img src="./assets/coin.png" alt="" class="size-6">
+                    <h1><span>30000</span> BDT</h1>
+                </div>
+            </div>
         </div>
     </header>
     <main class="w-11/12 md:w-10/12 mx-auto">
-        <div class="flex items-center gap-4 mb-8">
-            <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Important FAQ</h1>
-            <img class="size-14 md:size-16 lg:size-20" src="assets/faq.png" alt="">
+        <div class="flex items-center gap-3 mb-8">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold">Important FAQ</h1>
+            <img src="./assets/faq.png" alt="" class="size-14 md:size-16 lg:size-20">
         </div>
-        <div class="w-full join join-vertical">
-            <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p>Write your answer here</p>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree-like hierarchy, where every element (such as headings, paragraphs, and images) is treated as an object.</p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                    <p>Write your answer here</p>
-                    <ul></ul>
-                    <li>1. document.getElementById('id') - selects an element by its ID.</li>
-                    <li>2. document.querySelector('selector') - selects the first element that matches a CSS
-                        selector.</li>
-                    <li>3. document.getElementsByClassName('class') - selects elements by their class name.</li>
-                    <li>4. document.getElementsByTagName('tag') - selects elements by their tag name.</li>
+                    <p>To select an element from the DOM, you can use various JavaScript methods. Here are the most common ones:</p>
+                    <ul>
+                        <li>1. getElementById(id): Selects an element by its unique id attribute.</li>
+                        <li>2. getElementsByClassName(className): Selects all elements with a specific class name and returns a live HTMLCollection.</li>
+                        <li>3. getElementsByTagName(tagName): Selects all elements with a specific tag name (like div, p, etc.) and returns a live HTMLCollection.</li>
+                        <li>4. querySelector(selector): Selects the first element that matches a CSS selector (like #id, .class, tag, etc.).</li>
+                        <li>5. querySelectorAll(selector): Selects all elements that match a CSS selector and returns a static NodeList.</li>
                     </ul>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
-                    why is it useful?</div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM,
+                    and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Write your answer here</p>
+                    <p>Event delegation is a technique where a single event listener is attached to a parent element to
+                        handle events from its child elements. Instead of adding individual listeners to each child, the
+                        event bubbles up to the parent, which captures it. This is useful because it improves
+                        performance and simplifies code, especially when managing dynamic or large sets of child
+                        elements.</p>
                 </div>
             </div>
-            <div tabindex="0" class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
                 <input type="radio" name="my-accordion-4" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
-                    using the DOM?</div>
+                <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and
+                    styles using the DOM?</div>
                 <div class="collapse-content">
-                    <p>Write your answer here</p>
-                    <ul></ul>
-                    <li><span class="font-bold">Attributes</span>: Use setAttribute() to modify or add an attribute
-                        (e.g., element.setAttribute('src', 'image.jpg')) and getAttribute() to retrieve it.</li>
-                    <li><span class="font-bold">Styles</span>: Access or modify the style property (e.g.,
-                        element.style.color = 'red') or use classList to add/remove classes (e.g.,
-                        element.classList.add('active')).</li>
+                    <p>To manipulate an element's attributes and styles using the DOM:</p>
+                    <ul>
+                        <li><span class="font-bold">Attributes</span>: Use setAttribute() to modify or add an attribute and getAttribute() to retrieve it.</li>
+                        <li><span class="font-bold">Styles</span>: Access or modify the style property or use classList to add/remove classes.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="bg-[#F9F7F3] h-40 mt-16">
+    <footer class="bg-slate-100 h-40 mt-16"></footer>
 
     </footer>
 </body>

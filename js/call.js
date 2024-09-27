@@ -1,10 +1,10 @@
-document.getElementById('button-donation')
+document.getElementById('donation-button')
     .addEventListener('click', function () {
-        showSectionById('section-donation');
-        changeColorById('button-donation');
+        showSectionById('donation-section');
+        changeColorById('donation-button');
     });
-document.getElementById('button-history')
+document.getElementById('history-button')
     .addEventListener('click', function () {
         showSectionById('history-section');
-        changeColorById('button-history');
+        changeColorById('history-button');
     });
